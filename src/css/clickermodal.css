@@ -1,0 +1,64 @@
+:root {
+    --clicker-modal-display: flex;
+    --clicker-modal-scale: 1;
+}
+
+.clicker-modal-hide {
+    --clicker-modal-display: none;
+}
+
+.clicker-modal-warning {
+    --clicker-modal-scale: 1.1;
+}
+
+.clicker-modal-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    width: inherit;
+    display: var(--clicker-modal-display);
+    background: rgba(0, 0, 0, 0.4);
+    transition: var(--transition-time);
+}
+
+.clicker-modal {
+    border: 1px solid var(--border);
+    background-color: var(--navbar);
+    width: 500px;
+    transition: var(--transition-time);
+    scale: var(--clicker-modal-scale);
+}
+
+.clicker-modal-header {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.clicker-modal-header input {
+    border: 2px inset black;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    background-color: var(--background);
+    width: 100%;
+    color: var(--text);
+    outline-style: none;
+}
+
+.clicker-modal-header input::placeholder {
+    color: var(--text);
+}
+
+.clicker-modal-footer {
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+}
+
+@media (max-width: 576px) {
+    .clicker-modal {
+        margin: 0 20px;
+    }
+}

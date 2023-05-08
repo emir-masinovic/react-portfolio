@@ -1,0 +1,36 @@
+.ttt {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.status-board {
+    padding: 20px;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    background-color: var(--navbar);
+    border: 1px solid var(--border);
+}
+
+.tic-tac-toe-table {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+    max-width: 700px;
+}
+
+.tic-tac-toe-table-button {
+    color: var(--text);
+    font: inherit;
+    background-color: var(--navbar);
+    text-align: center;
+    padding: 20px;
+    outline: none;
+    border: 1px solid var(--border);
+}
+
+.tic-tac-toe-table-button:hover {
+    background-color: var(--link-faded);
+}

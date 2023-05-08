@@ -1,0 +1,78 @@
+:root {
+    --clicker-table-display: block;
+}
+
+.clicker-table-hide {
+    --clicker-table-display: none;
+}
+
+.clicker-table-container {
+    display: var(--clicker-table-display);
+    gap: 10px;
+    user-select: none;
+    background-color: var(--navbar);
+    border: 1px solid var(--border);
+    width: 25%;
+    transition: calc(var(--transition-time) / 5);
+}
+
+.clicker-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+.score {
+    padding: 10px 0;
+}
+
+td {
+    padding: 5px 0px;
+    border-top: 1px solid var(--border);
+}
+
+.player-name {
+    min-width: 100px;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.clicker-empty-container {
+    background-color: var(--background);
+    transition: var(--transition-time);
+}
+
+@media (max-width: 1400px) {
+    .clicker-table-container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .clicker-table-container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .clicker-table-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .clicker-table-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .clicker-table-container {
+        width: 90%;
+    }
+}

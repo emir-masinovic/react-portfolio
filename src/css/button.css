@@ -1,0 +1,25 @@
+:root {
+    --button-shadow: black;
+}
+
+.light-theme {
+    --button-shadow: gray;
+}
+
+.btn {
+    padding: 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--background);
+    border: 1px solid var(--border);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--text);
+    color: var(--navbar);
+    box-shadow: -4px 4px var(--button-shadow);
+    transform: translate(5px, -5px);
+}

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/src/fonts/Roboto-Thin.ttf);
+}
+
+:root {
+    --background: #464e56;
+    --text: #fff;
+    --border: black;
+    --transition-time: 1s;
+}
+
+.light-theme {
+    --background: #fff6ea;
+    --text: rgba(0, 0, 0, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+#root {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: var(--background);
+    transition: var(--transition-time);
+    color: var(--text);
+}
