@@ -1,19 +1,7 @@
 .project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-    .card-container {
-        width: 60% !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .card-container {
-        width: 90% !important;
-    }
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }

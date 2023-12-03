@@ -1,0 +1,77 @@
+.clock-container {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  background-color: var(--navbar);
+  border-radius: 50%;
+}
+
+.center {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  rotate: 180deg;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  background-color: var(--link-faded);
+  border-radius: 0 0 5px 5px;
+  border: 1px solid var(--border);
+  transition: 1s;
+}
+
+.mark {
+  position: absolute;
+  height: 30px;
+  width: 8px;
+  margin: 2px;
+  background-color: var(--link-faded);
+  border: 1px solid var(--border);
+}
+
+.mark-12 {
+  top: 0;
+}
+
+.mark-3 {
+  right: 0;
+  transform: rotate(90deg);
+  margin: 14px;
+}
+
+.mark-6 {
+  bottom: 0;
+}
+
+.mark-9 {
+  left: 0;
+  transform: rotate(90deg);
+  margin: 14px;
+}

@@ -1,26 +1,29 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 280px;
-    background: var(--navbar);
-    border: 1px solid black;
-    transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  background: var(--navbar);
+  border: 1px solid black;
+  transition: 0.2s;
+}
+
+.card-head {
+  height: 200px;
 }
 
 .img-card {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .card-body {
-    height: 250px;
-    padding: 10px 20px;
-    margin-top: -6px;
-    border-top: 1px solid black;
+  height: 200px;
+  padding: 5px 10px;
+  border-top: 1px solid black;
 }
 
 .card-footer {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 10px;
 }
